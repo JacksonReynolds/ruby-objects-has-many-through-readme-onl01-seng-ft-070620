@@ -21,4 +21,8 @@ class Customer
     new_meal = Meal.new(waiter, self, total, tip)
   end #new_meal
 
+  def meals
+    Meal.all.select {|meal| meal.customer == self}
+  end #meals
+
 end
