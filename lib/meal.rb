@@ -15,4 +15,8 @@ class Meal
     @@all << self
   end #initialize
 
+  def self.all
+    @@all
+  end #self.all
+
 end
